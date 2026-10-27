@@ -1,0 +1,47 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Environment / secrets (keep .env.example committed)
+.env
+.env.*
+!.env.example
+
+# Tool caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Uploaded documents (local storage, M2)
+storage/uploads/*
+!storage/uploads/.gitkeep
+
+# Model caches (sentence-transformers / Hugging Face re-ranker, M8)
+.cache/
+models/
+
+# Local eval outputs and logs
+*.log
+logs/
+evals_output/
+
+# Local Docker volume data (postgres, redis, grafana)
+data/
+volumes/
+
+# Editors and OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
